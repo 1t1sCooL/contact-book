@@ -9,7 +9,6 @@ interface Props {
 }
 
 const ContactList: React.FC<Props> = ({ contacts, onEdit, onDelete }) => {
-  // Группировка по доступным полям
   const grouped = {
     email: contacts.filter(c => c.email),
     phone: contacts.filter(c => c.phone),

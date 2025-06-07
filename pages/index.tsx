@@ -19,7 +19,6 @@ const HomePage: React.FC = () => {
     filterBy: 'all',
   });
 
-  // Загрузка из IndexedDB
   useEffect(() => {
     getAllContacts().then((contacts) => {
       contacts.forEach((c) => {
@@ -79,8 +78,8 @@ const HomePage: React.FC = () => {
     })
     .sort((a, b) => {
       return filters.sortOrder === 'newest'
-        ? b.createdAt - a.createdAt // Новые выше
-        : a.createdAt - b.createdAt; // Старые выше
+        ? b.createdAt - a.createdAt 
+        : a.createdAt - b.createdAt; 
     });
 
   return (
