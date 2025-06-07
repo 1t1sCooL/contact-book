@@ -31,8 +31,9 @@ export async function getAllContacts(): Promise<Contact[]> {
 export async function saveContact(contact: Contact): Promise<void> {
   const db = getDb();
   if (!db) return;
-  return (await db).put(STORE_NAME, contact);
+  await (await db).put(STORE_NAME, contact); 
 }
+
 
 export async function deleteContact(id: string): Promise<void> {
   const db = getDb();
