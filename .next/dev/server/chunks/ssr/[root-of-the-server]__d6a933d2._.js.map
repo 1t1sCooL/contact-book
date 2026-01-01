@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///home/user/Work/mmalabugin.ru/portfolio/landings/contact-book/pages/_app.tsx"],"sourcesContent":["import type { AppProps } from 'next/app';\nimport 'bootstrap/dist/css/bootstrap.min.css';\nimport { useEffect } from 'react';\n\nfunction App({ Component, pageProps }: AppProps) {\n  useEffect(() => {\n    if ('serviceWorker' in navigator) {\n      navigator.serviceWorker.register('/sw.js')\n        .then(reg => console.log('SW registered', reg.scope))\n        .catch(err => console.error('SW failed', err));\n    }\n  }, []);\n  return <Component {...pageProps} />;\n}\nexport default App;\n"],"names":[],"mappings":";;;;;AAEA;;;;AAEA,SAAS,IAAI,EAAE,SAAS,EAAE,SAAS,EAAY;IAC7C,IAAA,gHAAS,EAAC;QACR,IAAI,mBAAmB,WAAW;YAChC,UAAU,aAAa,CAAC,QAAQ,CAAC,UAC9B,IAAI,CAAC,CAAA,MAAO,QAAQ,GAAG,CAAC,iBAAiB,IAAI,KAAK,GAClD,KAAK,CAAC,CAAA,MAAO,QAAQ,KAAK,CAAC,aAAa;QAC7C;IACF,GAAG,EAAE;IACL,qBAAO,qKAAC;QAAW,GAAG,SAAS;;;;;;AACjC;uCACe"}}]
+}

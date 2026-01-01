@@ -1,0 +1,3 @@
+module.exports=[8171,(a,b,c)=>{b.exports=a.x("react/jsx-runtime",()=>require("react/jsx-runtime"))},27669,(a,b,c)=>{b.exports=a.x("react",()=>require("react"))},67298,a=>{"use strict";var b=a.i(8171),c=a.i(27669);a.s(["default",0,function({Component:a,pageProps:d}){return(0,c.useEffect)(()=>{"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js").then(a=>console.log("SW registered",a.scope)).catch(a=>console.error("SW failed",a))},[]),(0,b.jsx)(a,{...d})}])}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__972f5b9e._.js.map
